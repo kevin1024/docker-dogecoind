@@ -16,6 +16,4 @@ WORKDIR /dogecoind
 EXPOSE 22555
 EXPOSE 22556
 
-ADD	enter /enter
-RUN	chmod +x /enter
-ENTRYPOINT ["/enter"]
+ENTRYPOINT ["/bin/dogecoind"]
